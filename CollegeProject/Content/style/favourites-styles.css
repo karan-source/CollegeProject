@@ -1,0 +1,40 @@
+#fav-heading {
+    font-family: "Ubuntu", sans-serif;
+}
+
+#fav-descp {
+    font-family: "Karla", sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+th {
+    width: 100%;
+    background-color: rgb(19, 23, 34);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+td {
+    width: 100%;
+    text-align: center;
+}
+
+.fav-image {
+    height: 120px;
+    width: auto;
+}
+
+.remove-image {
+    height: 30px;
+    width: auto;
+}

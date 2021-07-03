@@ -1,0 +1,121 @@
+﻿@model List<CollegeProject.Models.Blogs>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+
+    <!-- Google Font CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Montserrat:wght@500&family=Ubuntu&family=Source+Sans+Pro&family=Lexend:wght@500&family=Karla:wght@300&family=Cookie&family=Pacifico&display=swap&family=Varela+Round&display=swap"
+          rel="stylesheet" />
+
+    <!-- BootStrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+
+    <link rel="icon" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="~/Content/style/blog-styles.css" />
+
+    <title>Blog</title>
+</head>
+<body>
+
+    <!-- Nav Section -->
+    <div id="navbar">
+        @Html.Partial("~/Views/Home/Nav.cshtml")
+    </div>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Blog</h1>
+            <p>Small Programs Perfect For Beginners To Get Started With Personal Growth.</p>
+        </div>
+    </header>
+
+    <section class="content-section mt-5 pt-5 pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    @foreach (var item in Model)
+                    {
+                        <div class="post-container mb-5">
+                            <img src="@Url.Content(item.Image)" alt="Every episode is a standalone story, but all are interconnected" class="post-img">
+                            <div class="post-content">
+                                <div class="post-inner">
+                                    <small class="post-date">
+                                        @item.Release
+                                    </small>
+                                    <h3 class="post-title">
+                                        <a href="@item.Link">
+                                            @item.Title
+                                        </a>
+                                    </h3>
+                                </div>
+                                <!-- end post-inner -->
+                            </div>
+                            <!-- end post-content -->
+
+                        </div>
+                        <!-- end blog-post -->
+                    }
+                </div>
+
+                <div class="col-lg-4">
+                    <aside class="sidebar">
+                        <div>
+                            <h6 class="sidebar-title">Recent Posts</h6>
+                            <ul>
+                                <li>
+                                    <a href="http://digiflex.themezinho.net/exclusive-santa-claus-shares-his-list-of-must-watch-ho-ho-holiday/">Exclusive: Santa Claus shares his list of must-watch ho-ho-holiday</a>
+                                    <span class="post-date">December 1, 2020</span>
+                                </li>
+                                <li>
+                                    <a href="http://digiflex.themezinho.net/digiflexs-spy-thriller-munich-starring-ceremy-arons-starts-production/">Digiflex’s spy thriller ‘Munich’ starring Ceremy Arons starts production</a>
+                                    <span class="post-date">December 1, 2020</span>
+                                </li>
+                                <li>
+                                    <a href="http://digiflex.themezinho.net/supernatural-horror-series-archive-81-starring-emmy-award-nominee/">Supernatural Horror Series Archive 81 Starring Emmy Award Nominee</a>
+                                    <span class="post-date">December 1, 2020</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="widget">
+                            <div>
+                                <div class="gallery-icon portrait">
+                                    <a href="http://digiflex.themezinho.net/wp-content/uploads/2020/12/tv-shows03.jpg" data-fancybox=""><img width="175" height="240" src="~/Content/images/aside-1.jpg" class="attachment-medium size-medium" alt="" loading="lazy" sizes="(max-width: 194px) 100vw, 194px"></a>
+                                    <a href="http://digiflex.themezinho.net/wp-content/uploads/2020/12/tv-shows04.jpg" data-fancybox=""><img width="175" height="240" src="~/Content/images/aside-2.jpg" class="attachment-medium size-medium" alt="" loading="lazy" sizes="(max-width: 194px) 100vw, 194px"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <!-- end col-4 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+
+    <!-- Footer -->
+    <div id="footer">
+        @Html.Partial("~/Views/Home/Footer.cshtml")
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+</body>
+</html>

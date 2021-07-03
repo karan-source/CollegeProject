@@ -1,0 +1,235 @@
+.carousel,
+.carousel img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card-section {
+    background-color: rgb(19, 23, 34);
+}
+
+.movie-intro h6 {
+    color: whitesmoke;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+.movie-intro h1 {
+    color: white;
+    width: 100%;
+    display: block;
+    margin: 0;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.movie-card {
+    overflow: hidden;
+    border: none;
+    margin: 10px 0px;
+    background-color: rgb(19, 23, 34);
+    transition: all 0.3s ease-in-out;
+}
+
+.movie-image {
+    transition: all 0.3s ease-in-out;
+}
+
+.movie-card:hover .movie-image {
+    transform: scale(1.1);
+}
+
+.movie-card-img {
+    overflow: hidden;
+}
+
+.body {
+    overflow: hidden;
+    color: white;
+    padding-top: 10px;
+    background-color: rgb(19, 23, 34);
+}
+
+    .body div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .body p {
+        font-size: 0.8rem;
+    }
+
+.movie-genre {
+    color: rgb(255, 0, 0);
+    font-family: "Baloo Tammudu 2", cursive;
+}
+
+.body a {
+    color: white;
+    margin-left: 15px;
+}
+
+    .body a:hover {
+        color: rgb(255, 0, 0);
+    }
+
+/* Feature Section */
+.feature-intro {
+    overflow: hidden;
+    color: black;
+    background-color: white;
+}
+
+.feature-card {
+    border: none;
+    margin: 15px 0px;
+}
+
+.feature-card-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.feature-image {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.feature-card-img:hover .feature-image {
+    transform: scale(1.1);
+}
+
+.feature-body {
+    color: black;
+    padding-top: 10px;
+    background-color: white;
+}
+
+    .feature-body h5 {
+        font-weight: bold;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+/* Audiobook Section */
+.audio-section {
+    background-color: rgb(19, 23, 34);
+}
+
+.audio-card {
+    overflow: hidden;
+    border: none;
+    margin: auto;
+    margin: 10px 0px;
+    background-color: rgb(19, 23, 34);
+}
+
+/* Custom Button */
+.custom-button {
+    height: 66px;
+    line-height: 64px;
+    display: inline-block;
+    background: #e90101;
+    color: #fff;
+    font-weight: 800;
+    padding: 0 50px;
+    border: 2px solid transparent;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+    .custom-button:hover {
+        text-decoration: none;
+        color: #fff;
+        border-color: #e90101;
+        background: none;
+    }
+
+.custom-button-tv {
+    height: 66px;
+    line-height: 64px;
+    display: inline-block;
+    background: #e90101;
+    color: #fff;
+    font-weight: 800;
+    padding: 0 50px;
+    border: 2px solid transparent;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+    .custom-button-tv:hover {
+        text-decoration: none;
+        color: #000;
+        border-color: #e90101;
+        background: none;
+    }
+
+/* Live Section */
+.live-bg .sub-title {
+    color: #656363;
+}
+
+.section-title .title {
+    margin-bottom: 0;
+    font-size: 36px;
+}
+
+.live-movie-content {
+    font-weight: 500;
+    color: #656363;
+}
+
+.active-customer h2 {
+    font-weight: bold;
+}
+
+.active-customer {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e1b29;
+    line-height: 1;
+}
+
+.btn-live {
+    box-shadow: 0px 3px 24px 0px rgb(160 160 160 / 50%);
+    background: #e4d804;
+    color: #1e1b29;
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    padding: 16px 34px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+}
+
+    .btn-live:hover {
+        background-color: white;
+        border: 1px solid #e4d804;
+    }
+
+.live-movie-img {
+    height: 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .live-movie-img {
+        display: none;
+    }
+}

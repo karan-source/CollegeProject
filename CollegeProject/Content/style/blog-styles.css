@@ -1,0 +1,144 @@
+﻿/* PAGE HEADER */
+.page-header {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url(../images/page-header-bg.jpg);
+    background-size: cover !important;
+    background-position: center !important;
+    left: 0;
+}
+
+    .page-header:after {
+        content: "";
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        left: 0;
+        opacity: 0.7;
+        background: black;
+        background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, black 100%);
+        background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, black 100%);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, black 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    }
+
+    .page-header .container {
+        position: relative;
+        color: #fff;
+        z-index: 1;
+        padding-top: 40px;
+    }
+
+    .page-header h1 {
+        width: 100%;
+        display: block;
+        font-weight: 800;
+        font-size: 3rem;
+    }
+
+        .page-header h1:after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background: #e90101;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+.content-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover !important;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.post-container {
+    position: relative;
+}
+
+.post-content {
+    position: absolute;
+    bottom: 5%;
+    padding: 20px;
+    z-index: 1;
+}
+
+.post-date {
+    color: white;
+}
+
+.post-title a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: 800;
+    line-height: 1.2;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+    .post-title a:hover {
+        text-decoration: underline;
+    }
+
+.post-img {
+    height: auto;
+    width: 100%;
+}
+
+.sidebar .sidebar-title {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #eee;
+    line-height: 1;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+    .sidebar ul li {
+        margin-bottom: 10px;
+    }
+
+.sidebar a {
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+    .sidebar a:hover {
+        text-decoration: underline;
+    }
+
+.sidebar .post-date {
+    width: 100%;
+    display: block;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    color: #909194;
+}
+
+.widget {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background: #fff;
+    justify-content: center;
+}
